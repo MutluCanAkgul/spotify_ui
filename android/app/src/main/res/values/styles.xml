@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Uygulama başladığında kullanılacak tema -->
+    <style name="LaunchTheme" parent="@android:style/Theme.Black.NoTitleBar">
+        <!-- Aktivite üzerinde splash ekranı göster. Flutter motoru ilk kareyi çizdiğinde otomatik olarak kaldırılır -->
+        <item name="android:windowBackground">@color/splash_background</item>
+    </style>
+    
+    <!-- Uygulama başladığında ve çalıştığı süre boyunca kullanılacak tema -->
+    <style name="NormalTheme" parent="@android:style/Theme.Light.NoTitleBar">
+        <!-- Flutter UI'si yüklenirken ve çalışırken Android penceresinin rengini belirler -->
+        <item name="android:windowBackground">?android:colorBackground</item>
+    </style>
+</resources>
